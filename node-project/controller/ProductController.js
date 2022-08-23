@@ -29,7 +29,6 @@ class ProductController {
     }
     static async deleteProduct(req,res){
         if(req.user){
-          console.log(req.user);
             await Product.destroy({where: {id: req.body.id } })
             res.send({ status: "deleted" })
         } else {
@@ -51,7 +50,6 @@ class ProductController {
           }
         })
         res.send([...cocktail])
-        console.log(cate);
       }
 
 

@@ -26,7 +26,6 @@ const storageEvent = multer.diskStorage({
     cb(null, "public/images/event");
   },
   filename: function (req, file, cb) {
-    console.log("file");
     let name = Date.now() + file.originalname;
     cb(null, name);
   },
@@ -37,7 +36,6 @@ const storageCategory = multer.diskStorage({
     cb(null, "public/images/category");
   },
   filename: function (req, file, cb) {
-    console.log("file");
     let name = Date.now() + file.originalname;
     cb(null, name);
   },

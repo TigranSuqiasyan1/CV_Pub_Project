@@ -12,7 +12,6 @@ export const Menu = () => {
 	const navigate = useNavigate()
 	const dispatch = useDispatch()
 	const data = useSelector(st => st.userReducer.profile)
-    console.log('mnu ====>',data);
 
 	useEffect(()=>{
 		AOS.init();

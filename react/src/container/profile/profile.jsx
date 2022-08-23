@@ -29,11 +29,7 @@ export const Profile = () => {
 
          
         </div>
-
     )
-
-
-    
 }
 
 

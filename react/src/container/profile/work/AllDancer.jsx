@@ -4,7 +4,6 @@ import { SAGA_DANCER, SAGA_DELETE_DANCER, SAGA_GET_ALL_USER} from "../../../stor
 import "./all_dancer.scss"
 export const AllDancer = () => {
     const data = useSelector(state => state.dancerReducer.arr)
-    console.log("all dancer===>", data);
     const dispatch = useDispatch()
     useEffect(() => {
         dispatch({type:SAGA_GET_ALL_USER})

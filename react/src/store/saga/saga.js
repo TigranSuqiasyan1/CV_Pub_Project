@@ -13,7 +13,6 @@ const axios = Axios.create({
 })
 
 function* mySaga(){
-    console.log('my saga');
     /**get */
     yield takeEvery(SAGA_HOME, getHome)
     yield takeEvery(SAGA_EVENT, getEvent)
@@ -72,15 +71,10 @@ function* getHome(){
 
 /**params */
 function* getProductById(){
-    console.log("get product by id");
 }
 function* getProductsByCategoryId(action){
-    console.log("get products by cat id", action);
     yield call(axiosLink, {link:LINK_GET_PRODUCT_CATEGORY_BY_ID, data:action.data, func:productData})
 }
-
-
-
 
 
 
@@ -133,7 +127,6 @@ function* getAllCategory(){
     yield call(axiosLink,{link:LINK_GET_ALL_CATEGORY,func:allCategory})
 }
 function* addNewCategory(action){
-    console.log(action);
     yield call(axiosLinkForm,{link:LINK_ADD_NEW_CATEGORY,data:action.form,func:setStatus})
 }
 function* deleteCategory(action){
@@ -141,7 +134,6 @@ function* deleteCategory(action){
     yield getAllCategory()
 }
 function* editCategory(action){
-    console.log("edit ok");
     yield call(axiosLinkForm, {link:LINK_EDIT_CATEGORY,data:action.form,func:setStatus})
     yield getAllCategory()
 }
@@ -160,7 +152,6 @@ function* getDancer(){
     yield call(axiosLink, {link:LINK_GET_ALL_DANCER, func:dancerData})
 }
 function* addNewDancer(action){
-    console.log("add dancer", action);
     yield call(axiosLinkForm,{link:LINK_ADD_NEW_DANCER,data:action.form,func:addNewDancerData})
 }
 function* deleteDancer(action){
@@ -172,16 +163,13 @@ function* deleteDancer(action){
 /**event */
 
 function* getEvent(){
-    console.log("get event");
     yield call(axiosLink, {link:LINK_GET_ALL_EVENT, func:eventData})
 }
 function* getEventToday(){
-    console.log("get event");
     yield call(axiosLink, {link:LINK_GET_EVENT_TODAY, func:eventData})
 }
 
 function* addNewEvent(action){
-    console.log(action);
     yield call(axiosLinkForm, {link:LINK_GET_ADD_NEW_EVENT, data:action.form, func:setStatus})
     
 }
@@ -198,7 +186,6 @@ function* getAllProduct(){
 }
 
 function* addNewProducts(action){
-    console.log("add product saga===>", action)
     yield call(axiosLinkForm,{link:LINK_ADD_NEW_PRODUCT,data:action.form, func:setStatus})
 }
 function* editProduct(action){

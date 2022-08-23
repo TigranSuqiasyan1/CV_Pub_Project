@@ -99,7 +99,6 @@ class UserController {
       let obj = {
         ...req.body
       }
-      console.log(obj);
       delete obj.id
       await User.update(obj, {
         where: {
@@ -150,7 +149,6 @@ class UserController {
         uspic.picUrl;
       fs.unlinkSync(str, (err, ok) => {
         if (err) err;
-        console.log("deleted");
       });
       await User.update({
         picUrl: req.file.filename
@@ -177,7 +175,6 @@ passport.use('local', new LocalStrategy(async function (username, password, done
       email: username
     }
   });
-  console.log(us);
   if (us) {
     if (bcrypt.compareSync(password, us.password)) {
       return done(null, us);

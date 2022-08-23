@@ -16,7 +16,6 @@ class CategoryController {
         id: req.body.id,
       },
     });
-    console.log(category);
     res.send({...category});
   }
 
@@ -34,7 +33,6 @@ class CategoryController {
   }
 
   static async deleteCategory(req, res) {
-    console.log(req.user);
     if (req.user) {
       await Category.destroy({ where: { id: req.body.id } });
       res.send({ status: "category deleted" });
@@ -52,7 +50,6 @@ class CategoryController {
         x.picUrl;
       fs.unlinkSync(str, (err, ok) => {
         if (err) err;
-        console.log("deleted");
       });
       await Category.update(
         { picUrl: req.file.filename },
