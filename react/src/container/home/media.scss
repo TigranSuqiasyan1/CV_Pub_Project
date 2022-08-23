@@ -1,0 +1,458 @@
+
+
+@media (max-width: 1750px) {
+  .main_event_box>div {
+    width: 50% !important;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 500px) !important;
+    grid-gap: 10px !important;
+  }
+  .event_description{
+    height: 14vh !important;
+  }
+
+}
+//-----------------------------
+@media (max-width: 1700px) {
+  .coc_title span {
+    font-size: 30px;
+  }
+
+  .to_day_event_text span {
+    font-size: 25px;
+  }
+
+  .event_bottom>div {
+    width: 30%;
+  }
+  .contacts_title > span {
+    font-size:53px;
+
+}
+}
+//-----------------------------
+@media (max-width: 1550px) {
+
+  .to_day_event_text span {
+    font-size: 20px;
+    letter-spacing: 4px !important;
+  }
+}
+//-----------------------------
+@media (max-width: 1360px) {
+  .to_day_event_text span {
+    letter-spacing: 3px !important;
+
+  }
+  .coc_title span {
+    font-size: 22px;
+  }
+
+  .cocktails_div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .marquee_text_div {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .event_item {
+    width: 70% !important;
+  }
+
+  .dos_best>div {
+    width: 30%;
+
+  }
+
+  .event_bottom>div {
+    width: 40%;
+  }
+
+  .section_dance_div1>span {
+    font-size: 21px;
+  }
+  .main_event_box>div {
+    width: 50% !important;
+    grid-gap: 10px !important;
+  }
+  .contacts_title > span {
+    font-size:48px;
+
+}
+
+.contacts_div{
+  display: flex;
+  flex-direction: column;
+
+}
+.icons_div{
+  display: flex;
+  flex-direction: row;
+  
+}
+.icon_phone span{
+  font-size: 17px;
+}
+.email > a{
+  font-size: 17px;
+}
+
+.icon_email{
+  margin-top: 30px;
+
+}
+}
+//-----------------------------
+@media (max-width: 1185px) {
+  .coc_title>div {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+  }
+
+  .coc_title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dos_best>div {
+    width: 30%;
+  }
+
+  .to_day_event_text>div {
+    width: 80%;
+    margin: auto;
+  }
+
+  .event_item {
+    width: 60% !important;
+  }
+
+  .event_bottom>div {
+    width: 50%;
+  }
+
+  .section_dance_div1>span {
+    font-size: 19px;
+    letter-spacing: 0.2em;
+
+  }
+
+  .main_event_box>div {
+    width: 80% !important;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 600px) !important;
+    grid-gap: 10px !important;
+  }
+  .carousel{
+    width: 80%;
+  }
+
+
+}
+//-----------------------------
+
+@media (max-width: 1160px) {
+  .section_dance_half1_box1{
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit,250px);
+    grid-gap: 15px;
+    margin-bottom: 40px;
+  }
+  .contacts_title {
+    width: 50%;
+}  
+  .main_category_box > div {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 400px);
+  }
+  .img_category_responsive {
+    width: 100%;
+    height: 30vh !important;
+}
+
+}
+
+//-----------------------------
+
+
+@media (max-width: 930px) {
+  .section_dance_div1>span {
+    font-size: 18 px;
+    letter-spacing: 0.1em;
+  }
+}
+//-----------------------------
+@media (max-width: 890px) {
+  .nav1 {
+    display: none !important;
+  }
+
+  .coc_title>div {
+    height: 50%;
+    letter-spacing: 3px;
+  }
+
+  .main_event_box>div {
+    width: 77% !important;
+    padding: 15px;
+  }
+
+  .dos_best>div {
+    width: 80%;
+    margin: auto;
+  }
+
+  .event_bottom>div {
+    width: 80%;
+    margin: auto;
+  }
+
+  .event_link {
+    letter-spacing: 0.2em;
+  }
+
+  .section_dance_div1 {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+  .section_dance_div1>span {
+    font-size: 18px;
+    letter-spacing: 0.3em;
+
+  }
+
+
+  .section_dance_half1{
+    border: 1px solid #20241A
+  }
+  .contacts_title {
+    width: 80%;
+}
+
+.contacts_div{
+  width: 80%;
+}
+
+
+
+
+}
+
+
+//-----------------------------
+@media (max-width: 774px) {
+  .marquee_text {
+    width: 70%;
+    margin: auto;
+  }
+}
+//-----------------------------
+@media (max-width: 700px) {
+  .marquee_all_cocktails_div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .all_cock_link {
+    width: 50%;
+  }
+
+  .to_day_event_text span {
+    font-size: 20px !important;
+    letter-spacing: 3px !important;
+  }
+
+  .section_dance_div1>span {
+    font-size: 16px;
+    letter-spacing: 0.2em;
+  }
+
+  .main_category_box > div {
+    width: 80%;
+    display: grid;
+}
+.phoneImg{
+  width: 30px;
+  height: 70px;
+}
+.icon_phone span {
+  font-size: 14px;
+}
+.email_img{
+  width: 70px;
+}
+.email > a{
+  font-size: 14px;
+}
+
+
+}
+//-----------------------------
+@media (max-width: 643px) {
+  .section_dance_half1_box1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,360px);
+  }
+}
+
+
+//-----------------------------
+@media (max-width: 600px) {
+  .coc_title>div {
+    width: 80% !important;
+  }
+
+  .coc_title span {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  .to_day_event_text>div {
+    width: 80%;
+  }
+
+  .main_event_box>div {
+    width: 80% !important;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 470px) !important;
+  }
+
+  .to_day_event_text span {
+    font-size: 18px !important;
+    letter-spacing: 2px !important;
+  }
+
+  .img_responsive {
+    width: 100%;
+}
+
+  .main_category_box > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 380px);
+}
+.img_category_responsive {
+  width: 100%;
+  height: 30vh !important;
+}
+.icon_FbIn>a{
+  font-size: 18px;
+}
+.phoneImg {
+  width: 25px;
+  height: 60px;
+}
+.icon_phone span {
+  font-size: 11px;
+}
+.email_img {
+  width: 50px;
+}
+.email > a {
+  font-size: 11px;
+}
+.icons_div{
+  gap: 5px;
+}
+
+
+}
+//-----------------------------
+@media(max-width:510px) {
+  .to_day_event_text span {
+    font-size: 17px !important;
+    letter-spacing: 0px !important;
+  }
+
+  .event_item {
+    width: 60% !important;
+  }
+
+  .event_link {
+    font-size: 15px !important;
+  }
+
+  .section_dance_div1>span {
+    font-size: 15px;
+    letter-spacing: 0.09em;
+  }
+  .img_responsive {
+    width: 100%;
+}
+.main_category_box > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 320px);
+}
+.img_category_responsive {
+width: 100%;
+}
+
+.phoneImg {
+  width: 22px;
+  height:53px;
+}
+.email_img {
+  width: 40px;
+}
+}
+
+
+
+//-----------------------------
+@media (max-width: 450px) {
+  .to_day_event_text span {
+    font-size: 17px;
+    letter-spacing: 0px;
+  }
+
+  .marquee_text {
+    width: 80%;
+    margin: auto;
+  }
+
+  .event_description {
+    width: 95%;
+    padding-left: 5% !important;
+  }
+  .section_dance_half1_box1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,300px);
+  
+  }
+  .main_category_box > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+  }
+
+  .icons_div {
+    gap: 0px;
+}
+.icon_FbIn{
+  gap: 5px;
+}
+
+.icon_phone{
+  width: 125px;
+}
+
+
+}

@@ -1,0 +1,208 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+
+}
+
+.head {
+  width: 80%;
+  height: 135px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  background-color: #2f3126cd;
+}
+
+.nav1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30%;
+  width: 100%;
+
+}
+
+.phone_email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone_email>span {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  justify-content: flex-end;
+  width: 230px;
+  gap: 10px;
+}
+
+.nav1 a {
+  color: #fbfbfb;
+  text-decoration: none;
+}
+
+.nav2 {
+  height: 70%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #e1d0b6c0;
+  
+
+}
+
+.nav2 a {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fbfbfb;
+  margin: 0 15px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  position: relative;
+
+}
+
+.nav2 a:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #2f3126cd;
+  top: 47%;
+  animation: out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+
+.nav2 a:hover:before {
+  animation: in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+
+}
+
+.dosamigos a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+@keyframes in {
+  0% {
+    width: 0;
+    left: 0;
+    right: auto;
+  }
+
+  100% {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
+@keyframes out {
+  0% {
+    width: 100%;
+    left: auto;
+    right: 0;
+  }
+
+  100% {
+    width: 0;
+    left: auto;
+    right: 0;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@for $i from 1 through 5 {
+  .nav2 a:nth-child(#{$i}) {
+    animation:show .1s #{$i*0.1+0.5}s ease 1 both;
+  }
+}
+
+@for $i from 1 through 5 {
+  .nav1 a:nth-child(#{$i}) {
+    animation:show .1s #{$i*0.1+0.5}s ease 1 both;
+  }
+}
+
+@for $i from 1 through 5 {
+  .nav1 strong:nth-child(#{$i}) {
+    animation:show .1s #{$i*0.1+0.5}s ease 1 both;
+  }
+}
+
+@for $i from 1 through 5 {
+  .nav1 :nth-child(#{$i}) {
+    animation:show .1s #{$i*0.1+0.5}s ease 1 both;
+  }
+}
+
+
+
+
+
+
+
+.nav2 input[type="checkbox"],
+.nav2 .hamburger-lines {
+  display: none;
+}
+
+
+.menu-items {
+  order: 2;
+  display: flex;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+

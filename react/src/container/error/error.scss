@@ -1,0 +1,23 @@
+.errorHead{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+}
+.error{
+    width: 80%;
+    height: 80%;
+    background-image: url("http://localhost:8080/img/error.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+}

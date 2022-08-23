@@ -1,0 +1,50 @@
+.main_all_user{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+      
+}
+.admin_table{
+    width: 80%;
+    table{
+        width: 100%;
+        height: 100%;
+        border: 1px solid;
+        border-collapse: collapse;
+         
+        th{
+            width: 15%;
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid;
+            img{
+                width: 55%;
+                height: 11vh;
+            }
+        }
+    }
+
+    th{
+        border: 1px solid;
+    }
+}
+.nameDiv{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.editInput{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    input{
+        border-radius: 10px;
+    }
+}

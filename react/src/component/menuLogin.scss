@@ -1,0 +1,45 @@
+
+.menuLoginDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.menuLogin{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul{
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        gap:20px;
+        
+        li{
+            transition: 1s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            a{
+                font-size: clamp(0.5px, 1vw, 20px);
+                color: white;
+                text-decoration: none !important;
+            }
+            a:hover{
+                color: #585951;
+            }
+        }
+        :hover{
+            background: #B7AB95;
+            color: #585951;
+        }
+        &:hover{
+            background: #555;
+        }
+    }
+}
